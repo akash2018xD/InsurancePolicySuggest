@@ -1,0 +1,15 @@
+from django import forms
+GENDER = (('1','Male',),('2', 'Female',))
+SMOKER = (('1','Yes',),('2','No',))
+class PolicyForm(forms.Form):
+    gender = forms.ChoiceField(widget=forms.RadioSelect,choices=GENDER)
+    fname = forms.CharField()
+    lname = forms.CharField()
+    email = forms.EmailField()
+    age = forms.IntegerField()
+    tobacco = forms.ChoiceField(widget=forms.RadioSelect,choices=SMOKER)
+    city = forms.CharField()
+    state = forms.CharField()
+    salary = forms.IntegerField()
+    coverage = forms.IntegerField()
+    duration = forms.IntegerField()

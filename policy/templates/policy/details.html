@@ -1,0 +1,42 @@
+{% extends 'policy/base.html' %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+{% block body %}
+<br><br>
+<h1 style="margin-left:230px;margin-top:40px;">Policy Calculator-</h1>
+<div style="margin-left:50px;margin-top:30px;">
+<form method="post">
+    {% csrf_token %}
+    <div style="position:absolute;width:500px;margin-right:-10px;left:426px;">
+    <h3>Select Gender</h3>
+    {{ form.gender }}
+    <h3>Enter First Name</h3>
+    {{ form.fname }}
+    <h3>Enter Last Name</h3>
+    {{ form.lname }}
+    <h3>Enter Your Email</h3>
+    {{ form.email }}
+    <br>
+    <h3>Age</h3>
+    {{ form.age }}
+    </div>
+    <div style="position:absolute;width:500px;margin-right:-10px;left: 763px;">
+    <h3>Tobacco User</h3>
+    {{ form.tobacco }}
+    <h3>Enter City</h3>
+    {{ form.city }}
+    <h3>Enter State</h3>
+    {{ form.state }}
+    <h3>Enter Salary</h3>
+    {{ form.salary }}
+    <h3>Enter Coverage</h3>
+    {{ form.coverage }}
+    <h3>Duration</h3>
+    {{ form.duration }}
+    </div>"submit" style="background-color:#64B5F6;border-radius:10px;border:0 none;padding:5px;color:#ffffff;top:592px;left:470px;position:absolute;">Submit<span class="glyphicon glyphicon-chevron-right"></span></button>
+    <h3>{{ fname
+    <br><br>
+    <button type=}}</h3>
+    <h3>{{ lname }}</h3>
+</form>
+</div>
+{% endblock %}
